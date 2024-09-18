@@ -1,0 +1,81 @@
+/* الخطوط الأساسية */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* شريط البحث */
+.search-container {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+.search-container input {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+}
+
+.search-container button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #2980b9;
+}
+
+/* تنسيق الخريطة */
+#map {
+    height: calc(100vh - 110px);
+    width: 100%;
+    margin-top: 50px;
+}
+
+/* شريط التنقل السفلي */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2c3e50;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.nav-button {
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-button:hover {
+    color: #3498db;
+}
+
+/* تحسين النصوص */
+.leaflet-popup-content {
+    font-size: 16px;
+    color: #2c3e50;
+}
